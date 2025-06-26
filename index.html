@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>ArchDesign Studio</title>
+  <link rel="stylesheet" href="styles.css" />
+  <script defer src="script.js"></script>
+</head>
+<body>
+  <header class="header">
+    <div class="container">
+      <h1 class="logo">ArchDesign</h1>
+      <nav class="nav" id="nav-menu">
+        <ul>
+          <li><a href="#home" class="nav-link active">Home</a></li>
+          <li><a href="#about" class="nav-link">About</a></li>
+          <li><a href="#projects" class="nav-link">Projects</a></li>
+          <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+      <button class="nav-toggle" id="nav-toggle" aria-label="toggle menu">
+        ☰
+      </button>
+    </div>
+  </header>
+  <section id="home" class="hero">
+    <div class="hero-overlay"></div>
+    <div class="container hero-content">
+      <h2>Designing Your Future Spaces</h2>
+      <p>Modern architecture solutions crafted with passion and precision for the next generation of living spaces.</p>
+      <div class="hero-buttons">
+        <a href="#projects" class="btn btn-primary">View Our Projects</a>
+        <a href="#contact" class="btn btn-secondary">Get In Touch</a>
+      </div>
+    </div>
+  </section>
+
+  <section id="about" class="about container">
+    <h2>About Us</h2>
+    <p>
+      ArchDesign Studio is a team of creative architects dedicated to
+      delivering innovative and sustainable architectural designs tailored to
+      your vision.
+    </p>
+  </section>
+  <section id="projects" class="projects container">
+    <h2>Our Projects</h2>
+    <div class="project-grid">
+      <div class="project-card">
+        <img src="imgs/img1.jpg" alt="Modern Building" />
+        <div class="project-content">
+          <h3>Modern Residential</h3>
+          <p>Contemporary homes with open spaces and natural light.</p>
+          <div class="project-tags">
+            <span class="tag">Residential</span>
+            <span class="tag">Modern</span>
+          </div>
+        </div>
+      </div>
+      <div class="project-card">
+        <img src="imgs/img2.jpg" alt="Office Architecture" />
+        <div class="project-content">
+          <h3>Corporate Office</h3>
+          <p>Efficient workspaces designed for productivity and style.</p>
+          <div class="project-tags">
+            <span class="tag">Commercial</span>
+            <span class="tag">Corporate</span>
+          </div>
+        </div>
+      </div>
+      <div class="project-card">
+        <img src="imgs/img3.jpg" alt="Public Library" />
+        <div class="project-content">
+          <h3>Community Spaces</h3>
+          <p>Innovative public buildings that foster community engagement.</p>
+          <div class="project-tags">
+            <span class="tag">Public</span>
+            <span class="tag">Community</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="contact container">
+    <h2>Contact Us</h2>
+    <form id="contact-form">
+      <label for="name">Name</label>
+      <input type="text" id="name" name="name" placeholder="Your full name" required />
+
+      <label for="email">Email</label>
+      <input type="email" id="email" name="email" placeholder="you@example.com" required />
+
+      <label for="message">Message</label>
+      <textarea id="message" name="message" rows="5" placeholder="Write your message here" required></textarea>
+
+      <button type="submit" class="btn">Send Message</button>
+      <p class="form-response" id="form-response"></p>
+    </form>
+  </section>
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-section">
+        <h3>ArchDesign Studio</h3>
+        <p>Creating innovative and sustainable architectural designs that transform spaces and inspire communities.</p>
+        <p><strong>📍</strong> 123 Design Avenue, Creative District, New York, NY 10001</p>
+        <p><strong>📞</strong> +1 (555) 123-4567</p>
+        <p><strong>✉️</strong> hello@archdesignstudio.com</p>
+      </div>
+      
+      <div class="footer-section">
+        <h3>Services</h3>
+        <ul>
+          <li><a href="#">Residential Design</a></li>
+          <li><a href="#">Commercial Architecture</a></li>
+          <li><a href="#">Interior Design</a></li>
+          <li><a href="#">Project Management</a></li>
+          <li><a href="#">3D Visualization</a></li>
+          <li><a href="#">Consultation</a></li>
+        </ul>
+      </div>
+      
+      <div class="footer-section">
+        <h3>Quick Links</h3>
+        <ul>
+          <li><a href="#about">About Us</a></li>
+          <li><a href="#projects">Portfolio</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <li><a href="#">Blog</a></li>
+          <li><a href="#">Careers</a></li>
+          <li><a href="#">Privacy Policy</a></li>
+        </ul>
+      </div>
+      
+      <div class="footer-section">
+        <h3>Follow Us</h3>
+        <p>Stay connected for the latest projects and design inspiration.</p>
+        <div class="social-icons">
+          <a href="#" aria-label="Facebook">📘</a>
+          <a href="#" aria-label="Instagram">📸</a>
+          <a href="#" aria-label="LinkedIn">🔗</a>
+          <a href="#" aria-label="Twitter">🐦</a>
+        </div>
+      </div>
+    </div>
+    
+    <div class="footer-bottom">
+      <div class="container">
+        <p>© 2025 ArchDesign Studio. All rights reserved.</p>
+        <p>Designed with ❤️ by ArchDesign Team</p>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
